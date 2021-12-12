@@ -1,0 +1,146 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+html {
+        font-size: 62.5%;
+}
+
+body {
+        background: rgb(34,193,195);
+        background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+}
+
+header {
+        min-height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 50vw;
+        margin: auto;
+}
+
+form {
+        min-height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 50vw;
+        margin: auto;
+}
+
+form input, form button {
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        margin-bottom: 1rem;
+}
+
+form input {
+        border-radius: 1rem 0 0 1rem;
+        flex:1;
+}
+
+.task-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.task-list {
+        min-width: 50vw;
+        margin: auto 5rem;
+}
+
+.task {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        background-color: white;
+        margin: 1rem;
+        border-radius: 1rem;
+}
+
+.task li {
+        list-style: none;
+        font-size: 1.6rem;
+        flex: 1;
+        margin: 0.5rem 1rem;
+}
+
+button {
+        background: none;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+}
+
+#addTask button {
+        color: white;
+        background-color: rgba(34,193,195,1);
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        width: 5vw;
+        min-width: 5rem;
+}
+
+#addTask button:hover {
+        background-color: rgb(111, 111, 214);
+        border-color: rgb(111, 111, 214);
+        cursor: pointer;
+}
+
+.task-buttons {
+        display: flex;
+        align-self: center;
+}
+
+.done:hover {
+        background-color: rgb(96, 153, 96);
+        border-color: rgb(96, 153, 96);
+}
+
+.delete:hover {
+        background-color: rgb(214, 81, 57);
+        border-color:  rgb(214, 81, 57);
+}
+
+.done {
+        color: white;
+        background-color: #8EBE78;
+        border: 0.2rem solid #8EBE78;
+        font-size: 1.4rem;
+        border-radius: 1rem 0 0 1rem;
+        padding: 0.6rem;
+        max-height: 4rem;
+        width: 5vw;
+        min-width: 6rem;
+}
+
+.delete {
+        color: white;
+        background-color: tomato;
+        border: 0.2rem solid tomato;
+        font-size: 1.4rem;
+        order: 2;
+        border-radius: 0 1rem 1rem 0;
+        max-height: 4rem;
+        padding: 0.6rem;
+        width: 5vw;
+        min-width: 6rem;
+}
+
+.completed {
+        opacity: 50%;
+        transition: all 0.6s ease;
+}
+
+.completed li{
+        text-decoration: line-through;
+}
